@@ -1,4 +1,4 @@
-package br.org.db.poc.postgre;
+package com.drodrigues17.poc.postgre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

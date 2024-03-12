@@ -1,4 +1,4 @@
-package br.org.db.poc.postgre;
+package com.drodrigues17.poc.postgre;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

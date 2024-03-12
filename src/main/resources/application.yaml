@@ -1,3 +1,5 @@
+server:
+  port: 8017
 spring:
   datasource:
     password: 5432
