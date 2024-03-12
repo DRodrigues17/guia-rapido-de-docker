@@ -1,0 +1,2 @@
+
+## O intuito desse repositório é dar uam breve explicação sobre docker, tanto na parte teórica quanto prática. Para ver as explicações sobre o código e a parte teórica, veja a [wiki](https://github.com/DRodrigues17/guia-rapido-de-docker/wiki)
