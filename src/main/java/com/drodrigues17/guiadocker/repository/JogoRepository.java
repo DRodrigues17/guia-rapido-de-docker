@@ -1,6 +1,6 @@
-package com.drodrigues17.poc.postgre.repository;
+package com.drodrigues17.guiadocker.repository;
 
-import com.drodrigues17.poc.postgre.model.Jogo;
+import com.drodrigues17.guiadocker.model.Jogo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

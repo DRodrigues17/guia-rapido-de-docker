@@ -10,5 +10,23 @@ services:
       POSTGRES_PASSWORD: 5432
     ports:
       - "5432:5432"
+    networks:
+      - guia-docker  
     volumes:
         - "~/data/postgre:/var/lib/postgresql/data"
+  minha-imagem:
+    image: drodrigues17/guia-rapido-docker:1.0.1
+    restart: unless-stopped
+    networks:
+      - guia-docker
+    ports:
+      - "8017:8017"  
+    depends_on:
+      - db  
+    environment:
+      SENHA_POSTGRE: 5432
+      URL_POSTGRE: jdbc:postgresql://db:5432/db-postgres
+      USUARIO_POSTGRE: postgres
+networks:
+  guia-docker:
+    driver: bridge

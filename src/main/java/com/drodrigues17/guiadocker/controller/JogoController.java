@@ -1,7 +1,7 @@
-package com.drodrigues17.poc.postgre.controller;
+package com.drodrigues17.guiadocker.controller;
 
-import com.drodrigues17.poc.postgre.model.Jogo;
-import com.drodrigues17.poc.postgre.repository.JogoRepository;
+import com.drodrigues17.guiadocker.model.Jogo;
+import com.drodrigues17.guiadocker.repository.JogoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
