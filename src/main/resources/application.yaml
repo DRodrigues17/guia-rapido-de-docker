@@ -1,5 +1,16 @@
+server:
+  port:  ${PORT:8017}
 spring:
   datasource:
-    password: 5432
-    url: jdbc:postgresql://localhost:5432/db-postgres?createDatabaseIfNotExist=true
-    username: postgres
+    password: ${SENHA_POSTGRE:5432}
+    url: ${URL_POSTGRE:jdbc:postgresql://localhost:5432/db-postgres}
+    username: ${USUARIO_POSTGRE:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: 'false'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+        show_sql: 'true'
+        ddl-auto: update
